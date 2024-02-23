@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Hello world! Hello Tensfer
+# Start using Tensfer
 
 ⏱️ Time to complete: **5 minutes**
 

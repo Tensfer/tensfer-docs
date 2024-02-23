@@ -2,11 +2,11 @@
 sidebar_position: 3
 ---
 
-# Create a Blog Post
+# Embed your app
 
 Docusaurus creates a **page for each blog post**, but also a **blog index page**, a **tag system**, an **RSS** feed...
 
-## Create your first Post
+## Set up Payments
 
 Create a file at `blog/2021-02-28-greetings.md`:
 

@@ -8,7 +8,7 @@ const config: Config = {
   favicon: "img/icon.webp",
 
   // Set the production url of your site here
-  url: "https://tensfer.co",
+  url: "https://docs.tensfer.co",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: "/",
@@ -62,13 +62,30 @@ const config: Config = {
       },
       items: [
         {
-          type: "docSidebar",
-          sidebarId: "tutorialSidebar",
-          position: "left",
-          label: "Build",
+          type: 'doc',
+          docId: 'getstarted/intro',
+          position: 'left',
+          label: 'Get Started',
         },
-        { to: "/blog", label: "Blog", position: "left" },
-      ],
+        {
+          type: 'doc',
+          docId: 'payments/intro',
+          position: 'left',
+          label: 'Payments',
+        },
+        {
+          type: 'doc',
+          docId: 'account-data/introduction/intro',
+          position: 'left',
+          label: 'Account data',
+        },
+        {
+          type: 'doc',
+          docId: 'reference/intro',
+          position: 'left',
+          label: 'Developer tools',
+        },
+      ]
     },
     // footer: {
     //   style: "dark",
