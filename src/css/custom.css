@@ -41,3 +41,9 @@ html[data-theme="light"] .navbar .navbar__logo {
   width: 80px;
   height: 20px;
 }
+
+/* Override non-category links to be horizonally compact */
+li > a.menu__link {
+  font-size: 15px;
+  font-weight: 400;
+}
