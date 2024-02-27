@@ -27,6 +27,7 @@
   --ifm-color-primary-lighter: #ffffff;
   --ifm-color-primary-lightest: #ffffff;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  background-color: #1a202c;
 }
 
 html[data-theme="dark"] .navbar .navbar__logo {
@@ -34,6 +35,14 @@ html[data-theme="dark"] .navbar .navbar__logo {
 }
 
 html[data-theme="light"] .navbar .navbar__logo {
+  content: url(/img/logo_colored.webp);
+}
+
+html[data-theme="dark"] .homeLogo {
+  content: url(/img/logo_white.webp);
+}
+
+html[data-theme="light"] .homeLogo {
   content: url(/img/logo_colored.webp);
 }
 
