@@ -46,6 +46,14 @@ html[data-theme="light"] .homeLogo {
   content: url(/img/logo_colored.webp);
 }
 
+html[data-theme="dark"] .box {
+  color: white;
+}
+
+html[data-theme="light"] .box {
+  color: black;
+}
+
 .navbar .navbar__logo {
   width: 80px;
   height: 20px;

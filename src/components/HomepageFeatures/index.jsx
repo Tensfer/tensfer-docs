@@ -14,14 +14,14 @@ const Introduction = [
     Svg: require("@site/static/img/how_tensfer_works.svg").default,
     description:
       "Discover the mechanics behind the transformative power of Tensfer.",
-      to: "/introduction/intro",
+    to: "/introduction/intro",
   },
   {
     title: "Concepts",
     Svg: require("@site/static/img/concepts.svg").default,
     description:
       "Unlock the intricacies of fundamental concepts with comprehensive insights now.",
-      to: "/introduction/intro",
+    to: "/introduction/intro",
   },
 ];
 
@@ -111,10 +111,15 @@ const Feature = ({ Svg, title, description, to }) => {
       to={to}
       p={4}
       border="1px"
+      borderColor="gray.300"
       borderRadius="lg"
-      _hover={{ transform: "scale(1.04)" }}
+      _hover={{
+        transform: "scale(1.04)",
+        boxShadow: "2xl",
+        textDecoration: "none",
+      }}
+      className="box"
       transition="transform 0.3s ease"
-      boxShadow="sm"
     >
       <Svg className={styles.featureSvg} role="img" />
       <Text fontWeight="bold" fontSize={{ base: "md", lg: "xl", "2xl": "2xl" }}>
