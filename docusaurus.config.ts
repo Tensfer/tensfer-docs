@@ -63,27 +63,33 @@ const config: Config = {
       items: [
         {
           type: 'doc',
-          docId: 'getstarted/intro',
+          docId: 'introduction/intro',
           position: 'left',
-          label: 'Get Started',
+          label: 'Introduction',
         },
         {
           type: 'doc',
-          docId: 'payments/intro',
+          docId: 'getting-started/intro',
           position: 'left',
-          label: 'Payments',
+          label: 'Getting started',
         },
         {
           type: 'doc',
-          docId: 'account-data/introduction/intro',
+          docId: 'features/intro',
           position: 'left',
-          label: 'Account data',
+          label: 'Features',
         },
         {
           type: 'doc',
-          docId: 'reference/intro',
+          docId: 'developer-tools/intro',
           position: 'left',
           label: 'Developer tools',
+        },
+        {
+          type: 'doc',
+          docId: 'developer-tools/intro',
+          position: 'left',
+          label: 'Community',
         },
       ]
     },

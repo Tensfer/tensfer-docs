@@ -1,4 +1,4 @@
-import { Box, Stack, Text, SimpleGrid } from "@chakra-ui/react";
+import { Stack, Text, SimpleGrid } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 import styles from "./styles.module.css";
 
@@ -7,21 +7,21 @@ const Introduction = [
     title: "Starting point",
     Svg: require("@site/static/img/intro.svg").default,
     description: "Embark on your journey from this pivotal starting point.",
-    to: "/getstarted/intro",
+    to: "/introduction/intro",
   },
   {
     title: "How Tensfer works",
     Svg: require("@site/static/img/how_tensfer_works.svg").default,
     description:
       "Discover the mechanics behind the transformative power of Tensfer.",
-    to: "/getstarted/intro",
+      to: "/introduction/intro",
   },
   {
     title: "Concepts",
     Svg: require("@site/static/img/concepts.svg").default,
     description:
       "Unlock the intricacies of fundamental concepts with comprehensive insights now.",
-    to: "/getstarted/intro",
+      to: "/introduction/intro",
   },
 ];
 
@@ -105,8 +105,8 @@ const Community = [
 
 const Feature = ({ Svg, title, description, to }) => {
   return (
-    <Box
-      w="320px"
+    <Stack
+      w={{ base: "100%", lg: "90%" }}
       as={Link}
       to={to}
       p={4}
@@ -114,31 +114,22 @@ const Feature = ({ Svg, title, description, to }) => {
       borderRadius="lg"
       _hover={{ transform: "scale(1.04)" }}
       transition="transform 0.3s ease"
+      boxShadow="sm"
     >
-      <Stack w="100%" p={0} boxShadow="sm">
-        <Svg className={styles.featureSvg} role="img" />
-        <Text
-          fontWeight="bold"
-          fontSize={{ base: "md", lg: "xl", "2xl": "2xl" }}
-        >
-          {title}
-        </Text>
-        <Text fontSize={{ base: "sm", lg: "sm", "2xl": "md" }}>
-          {description}
-        </Text>
-      </Stack>
-    </Box>
+      <Svg className={styles.featureSvg} role="img" />
+      <Text fontWeight="bold" fontSize={{ base: "md", lg: "xl", "2xl": "2xl" }}>
+        {title}
+      </Text>
+      <Text fontSize={{ base: "sm", lg: "sm", "2xl": "md" }}>
+        {description}
+      </Text>
+    </Stack>
   );
 };
 
 export default function HomepageFeatures() {
   return (
-    <Stack
-      p={{ base: 4, lg: 0 }}
-      maxW="1024px"
-      mx="auto"
-      spacing={12}
-    >
+    <Stack p={{ base: 4, lg: 0 }} maxW="1024px" mx="auto" spacing={12}>
       <Stack mt={8} p={{ base: 8, lg: 0 }}>
         <Text
           fontWeight="bold"
@@ -146,7 +137,10 @@ export default function HomepageFeatures() {
         >
           Introduction
         </Text>
-        <SimpleGrid columns={{ base: 1, lg: 3 }} spacing={{ base: 6, lg: 0 }}>
+        <SimpleGrid
+          columns={{ base: 1, md: 2, lg: 3 }}
+          spacing={{ base: 6, lg: 0 }}
+        >
           {Introduction.map((item) => (
             <Feature
               key={item.title}
@@ -166,7 +160,10 @@ export default function HomepageFeatures() {
         >
           Getting started
         </Text>
-        <SimpleGrid columns={{ base: 1, lg: 3 }} spacing={{ base: 6, lg: 0 }}>
+        <SimpleGrid
+          columns={{ base: 1, md: 2, lg: 3 }}
+          spacing={{ base: 6, lg: 0 }}
+        >
           {GettingStarted.map((item) => (
             <Feature
               key={item.title}
@@ -186,7 +183,10 @@ export default function HomepageFeatures() {
         >
           Features
         </Text>
-        <SimpleGrid columns={{ base: 1, lg: 3 }} spacing={{ base: 6, lg: 0 }}>
+        <SimpleGrid
+          columns={{ base: 1, md: 2, lg: 3 }}
+          spacing={{ base: 6, lg: 0 }}
+        >
           {Features.map((item) => (
             <Feature
               key={item.title}
@@ -206,7 +206,10 @@ export default function HomepageFeatures() {
         >
           Developer tools
         </Text>
-        <SimpleGrid columns={{ base: 1, lg: 3 }} spacing={{ base: 6, lg: 0 }}>
+        <SimpleGrid
+          columns={{ base: 1, md: 2, lg: 3 }}
+          spacing={{ base: 6, lg: 0 }}
+        >
           {DeveloperTools.map((item) => (
             <Feature
               key={item.title}
@@ -226,7 +229,10 @@ export default function HomepageFeatures() {
         >
           Community
         </Text>
-        <SimpleGrid columns={{ base: 1, lg: 3 }} spacing={{ base: 6, lg: 0 }}>
+        <SimpleGrid
+          columns={{ base: 1, md: 2, lg: 3 }}
+          spacing={{ base: 6, lg: 0 }}
+        >
           {Community.map((item) => (
             <Feature
               key={item.title}
