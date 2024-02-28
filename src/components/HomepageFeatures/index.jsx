@@ -115,7 +115,7 @@ const Feature = ({ Svg, title, description, to }) => {
       borderRadius="lg"
       _hover={{
         transform: "scale(1.04)",
-        boxShadow: "2xl",
+        boxShadow: " 0px 0px 5px 5px #eeedee",
         textDecoration: "none",
       }}
       className="box"
