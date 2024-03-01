@@ -29,7 +29,7 @@ const GettingStarted = [
     title: "Signup",
     Svg: require("@site/static/img/starting_point.svg").default,
     description:
-      "Create your account and build your own app with the Okra dashboard, then get your API keys and start making payments.",
+      "Create your account and build apps with the Tensfer dashboard, then get your API keys and start making payments.",
     to: "https://dash.tensfer.co/auth/signup",
   },
   {
