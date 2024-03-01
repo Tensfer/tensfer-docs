@@ -42,16 +42,13 @@ This is my **first Docusaurus document**!
 It is also possible to create your sidebar explicitly in `sidebars.js`:
 
 ```js title="sidebars.js"
-export default {
-  tutorialSidebar: [
-    'intro',
-    // highlight-next-line
-    'hello',
-    {
-      type: 'category',
-      label: 'Tutorial',
-      items: ['tutorial-basics/create-a-document'],
-    },
-  ],
-};
+Okra.buildWithShortUrl({
+  short_url: "{Your short_url}",
+  onSuccess: function (data) {
+    console.log("success", data);
+  },
+  onClose: function () {
+    console.log("closed");
+  },
+});
 ```

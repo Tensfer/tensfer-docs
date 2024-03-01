@@ -63,12 +63,6 @@ const config: Config = {
       items: [
         {
           type: 'doc',
-          docId: 'introduction/intro',
-          position: 'left',
-          label: 'Introduction',
-        },
-        {
-          type: 'doc',
           docId: 'getting-started/intro',
           position: 'left',
           label: 'Getting started',

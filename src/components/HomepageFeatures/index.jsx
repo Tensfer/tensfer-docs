@@ -1,43 +1,43 @@
-import { Stack, Text, SimpleGrid } from "@chakra-ui/react";
-import { Link } from "react-router-dom";
+import { Stack, Text, SimpleGrid, Link } from "@chakra-ui/react";
 import styles from "./styles.module.css";
 
-const Introduction = [
-  {
-    title: "Starting point",
-    Svg: require("@site/static/img/intro.svg").default,
-    description: "Embark on your journey from this pivotal starting point.",
-    to: "/introduction/intro",
-  },
-  {
-    title: "How Tensfer works",
-    Svg: require("@site/static/img/how_tensfer_works.svg").default,
-    description:
-      "Discover the mechanics behind the transformative power of Tensfer.",
-    to: "/introduction/intro",
-  },
-  {
-    title: "Concepts",
-    Svg: require("@site/static/img/concepts.svg").default,
-    description:
-      "Unlock the intricacies of fundamental concepts with comprehensive insights now.",
-    to: "/introduction/intro",
-  },
-];
+// const Introduction = [
+//   {
+//     title: "Starting point",
+//     Svg: require("@site/static/img/intro.svg").default,
+//     description: "Embark on your journey from this pivotal starting point.",
+//     to: "/introduction/intro",
+//   },
+//   {
+//     title: "How Tensfer works",
+//     Svg: require("@site/static/img/how_tensfer_works.svg").default,
+//     description:
+//       "Discover the mechanics behind the transformative power of Tensfer.",
+//     to: "/introduction/intro",
+//   },
+//   {
+//     title: "Concepts",
+//     Svg: require("@site/static/img/concepts.svg").default,
+//     description:
+//       "Unlock the intricacies of fundamental concepts with comprehensive insights now.",
+//     to: "/introduction/intro",
+//   },
+// ];
 
 const GettingStarted = [
   {
     title: "Signup",
     Svg: require("@site/static/img/starting_point.svg").default,
-    description: "Join the community: Sign up right now",
-    to: "/getstarted/intro",
+    description:
+      "Create your account and build your own app with the Okra dashboard, then get your API keys and start making payments.",
+    to: "https://dash.tensfer.co/auth/signup",
   },
   {
-    title: "Onboarding",
-    Svg: require("@site/static/img/onboarding.svg").default,
+    title: "Build an app",
+    Svg: require("@site/static/img/concepts.svg").default,
     description:
-      "Navigate through onboarding effortlessly for optimal experience.",
-    to: "/getstarted/intro",
+      "Navigate through building an app effortlessly for optimal experience.",
+    to: "/getting-started/build-an-app",
   },
   {
     title: "Get customers",
@@ -108,7 +108,7 @@ const Feature = ({ Svg, title, description, to }) => {
     <Stack
       w={{ base: "100%", lg: "90%" }}
       as={Link}
-      to={to}
+      href={to}
       p={4}
       border="1px"
       borderColor="gray.300"
@@ -136,13 +136,11 @@ export default function HomepageFeatures() {
   return (
     <Stack p={{ base: 4, lg: 0 }} maxW="1024px" mx="auto" spacing={12}>
       <Stack mt={8} p={{ base: 8, lg: 0 }}>
-        <Text
-          fontWeight="bold"
-          fontSize={{ base: "lg", lg: "3xl", "2xl": "4xl" }}
-        >
-          Introduction
+        <Text fontSize={{ base: "sm", lg: "lg" }}>
+          This documentation offers guides and resources to help you get up and
+          running with Tensfer.
         </Text>
-        <SimpleGrid
+        {/* <SimpleGrid
           columns={{ base: 1, md: 2, lg: 3 }}
           spacing={{ base: 6, lg: 0 }}
         >
@@ -155,7 +153,7 @@ export default function HomepageFeatures() {
               to={item.to}
             />
           ))}
-        </SimpleGrid>
+        </SimpleGrid> */}
       </Stack>
 
       <Stack mt={8} p={{ base: 8, lg: 0 }}>

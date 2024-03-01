@@ -1,34 +1,29 @@
 ---
-sidebar_position: 3
+sidebar_position: 4
 ---
 
 # Embed your app
 
-Docusaurus creates a **page for each blog post**, but also a **blog index page**, a **tag system**, an **RSS** feed...
+Gain more flexibility and control by configuring parameters according to your use case and business needs.
 
-## Create your first Post
+### How to embed your app
 
-Create a file at `blog/2021-02-28-greetings.md`:
+After you build your app, the App builder generates the assets you need to embed your app. These ready-to-use code snippets are unique for each app that you create. Use them to minimize the chance of error and to reduce your time to production. Here's how you can find these code snippets on the dashboard:
 
-```md title="blog/2021-02-28-greetings.md"
----
-slug: greetings
-title: Greetings!
-authors:
-  - name: Joel Marcey
-    title: Co-creator of Docusaurus 1
-    url: https://github.com/JoelMarcey
-    image_url: https://github.com/JoelMarcey.png
-  - name: Sébastien Lorber
-    title: Docusaurus maintainer
-    url: https://sebastienlorber.com
-    image_url: https://github.com/slorber.png
-tags: [greetings]
----
+- Open the Apps page and select the app that you want to embed. This opens the app's Integration tab.
 
-Congratulations, you have made your first post!
+### Using buildWithShortUrl
 
-Feel free to play around and edit this post as much as you like.
+This option provides a quick and simple way to directly integrate the Tensfer app you already customized into your app or website. `short_url` is a unique URL that identifies an Okra app that you created.
+
+```js
+Tensfer.buildWithShortUrl({
+  short_url: "{Your short_url}",
+  onSuccess: function (data) {
+    console.log("success", data);
+  },
+  onClose: function () {
+    console.log("closed");
+  },
+});
 ```
-
-A new blog post is now available at [http://localhost:3000/blog/greetings](http://localhost:3000/blog/greetings).
