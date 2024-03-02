@@ -14,7 +14,7 @@ After you build your app, the App builder generates the assets you need to embed
 
 ### Using buildWithShortUrl
 
-This option provides a quick and simple way to directly integrate the Tensfer app you already customized into your app or website. `short_url` is a unique URL that identifies an Okra app that you created.
+This option provides a quick and simple way to directly integrate the Tensfer app you already customized into your app or website. `short_url` is a unique URL that identifies a Tensfer app that you created.
 
 ```js
 Tensfer.buildWithShortUrl({
