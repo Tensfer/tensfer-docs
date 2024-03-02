@@ -60,11 +60,17 @@ html[data-theme="light"] .box {
 }
 
 /* Override non-category links to be horizonally compact */
-li > a.menu__link {
+
+li {
+  margin-top: 0px;
   font-size: 14px;
   font-weight: 500;
 }
 
 .link {
-  color: blue
+  color: #40b0df;
+}
+
+.bold {
+  font-weight: bold;
 }

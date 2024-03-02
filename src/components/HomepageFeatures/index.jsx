@@ -29,7 +29,7 @@ const GettingStarted = [
     title: "Signup",
     Svg: require("@site/static/img/starting_point.svg").default,
     description:
-      "Create your account and build your own app with the Okra dashboard, then get your API keys and start making payments.",
+      "Build your own app with the Tensfer dashboard, then get your API keys and start making payments.",
     to: "https://dash.tensfer.co/auth/signup",
   },
   {
@@ -160,6 +160,7 @@ export default function HomepageFeatures() {
         <Text
           fontWeight="bold"
           fontSize={{ base: "lg", lg: "3xl", "2xl": "4xl" }}
+          color='#40b0df'
         >
           Getting started
         </Text>
@@ -183,6 +184,7 @@ export default function HomepageFeatures() {
         <Text
           fontWeight="bold"
           fontSize={{ base: "lg", lg: "3xl", "2xl": "4xl" }}
+          color='#40b0df'
         >
           Features
         </Text>
@@ -206,6 +208,7 @@ export default function HomepageFeatures() {
         <Text
           fontWeight="bold"
           fontSize={{ base: "lg", lg: "3xl", "2xl": "4xl" }}
+          color='#40b0df'
         >
           Developer tools
         </Text>
@@ -229,6 +232,7 @@ export default function HomepageFeatures() {
         <Text
           fontWeight="bold"
           fontSize={{ base: "lg", lg: "3xl", "2xl": "4xl" }}
+          color='#40b0df'
         >
           Community
         </Text>
