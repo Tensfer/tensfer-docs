@@ -9,7 +9,7 @@ Building the impossible with Tensfer begins with your onboarding. This guide tak
 
 ### Complete compliance
 
-After you’ve verified your email address, you can start signing up your business via the Okra Dashboard. This compliance process has 3 steps:
+After you’ve verified your email address, you can start signing up your business via the Tensfer Dashboard. This compliance process has 3 steps:
 
 - <p className='bold'>Company info</p> Provide your company name, the industry of of your business it's use case.
 

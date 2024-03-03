@@ -10,19 +10,19 @@ Test the app you create to check out Tensfer's features, and to demo the whole u
 
 Click on an App in the Dashboard to retrieve your sandbox credentials.
 
-- The client token is a unique ID that represents you, as a client. You must use it together with your public API key in your Okra app implementation. Client tokens can be used in both Sandbox and Production environments.
+- The client token is a unique ID that represents you, as a client. You must use it together with your public API key in your Tensfer app implementation. Client tokens can be used in both Sandbox and Production environments.
 
-- The public API key, along with the client token is used to authenticate your Okra app implementation.
+- The public API key, along with the client token is used to authenticate your Tensfer app implementation.
 
 - The secret API key is a JWT bearer token that you must use for authentication on the API level.
 
 ## Set up the environment
 
-During your integration phase, set up the sandbox environment in these interfaces: the API, your Okra apps, and the dashboard.
+During your integration phase, set up the sandbox environment in these interfaces: the API, your Tensfer apps, and the dashboard.
 
 ### In the API
 
-Set your base URL to `https://dashapi.tensfer.co`. Check out Okra's <a href='/' className='link'>API environments</a> for more details.
+Set your base URL to `https://dashapi.tensfer.co`. Check out Tensfer's <a href='/' className='link'>API environments</a> for more details.
 
 ### In the embed options
 
@@ -36,17 +36,17 @@ Select an App in the Apps menu and select `Sandbox` mode in the top right.
 
 :::info
 
-Make sure that you read through the <a href='/' className='link'>Okra API overview</a> to understand the specifics of interacting with the Okra API, like request and response formats, pagination, and rate limiting.
+Make sure that you read through the <a href='/' className='link'>Tensfer API overview</a> to understand the specifics of interacting with the Tensfer API, like request and response formats, pagination, and rate limiting.
 
 :::
 
-1. Select your Okra Sandbox environment.
+1. Select your Tensfer Sandbox environment.
 
-2. In the Okra API Reference collection, select Wallets → <a href='/' className='link'>Get list of wallets.</a>
+2. In the Tensfer API Reference collection, select Wallets → <a href='/' className='link'>Get list of wallets.</a>
 
 3. Click send and check the response.
 
-If you set everything up correctly, this endpoint operation returns a list of banks that Okra supports.
+If you set everything up correctly, this endpoint operation returns a list of banks that Tensfer supports.
 
 ## Create a test customer
 
@@ -62,7 +62,7 @@ When you create customers, the account type you select determines the data set t
 
 :::
 
-## Embed the Okra app
+## Embed the Tensfer app
 
 Let's see how you can link a bank account using the sandbox environment, and with test credentials:
 
