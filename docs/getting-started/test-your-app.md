@@ -6,14 +6,64 @@ sidebar_position: 6
 
 Test the app you create to check out Tensfer's features, and to demo the whole user journey.
 
-### Testing with Tensfer Sandbox
+## Get test credentials
 
-Testing in the sandbox mode is quintessential for your business as you get to quickly develop and test your application in the shortest possible time. With the test credentials provided, you can access the data structure that we return Live in a sample format.
+Click on an App in the Dashboard to retrieve your sandbox credentials.
 
+- The client token is a unique ID that represents you, as a client. You must use it together with your public API key in your Okra app implementation. Client tokens can be used in both Sandbox and Production environments.
 
-:::info API calls made in sandbox mode are free
+- The public API key, along with the client token is used to authenticate your Okra app implementation.
 
-- You will not be charged for any API requests while your app is in sandbox mode.
-- Sandbox data can be gotten via our sandbox credentials.
+- The secret API key is a JWT bearer token that you must use for authentication on the API level.
+
+## Set up the environment
+
+During your integration phase, set up the sandbox environment in these interfaces: the API, your Okra apps, and the dashboard.
+
+### In the API
+
+Set your base URL to `https://dashapi.tensfer.co`. Check out Okra's <a href='/' className='link'>API environments</a> for more details.
+
+### In the embed options
+
+Set the value of `env` to `production-sandbox` when you build with `options`. Learn more about the options that you can use when you <a href='embed-your-app#using-buildwithshorturl' className='link'>embed your app</a>.
+
+### In the Dashboard
+
+Select an App in the Apps menu and select `Sandbox` mode in the top right.
+
+## Interact with the API
+
+:::info
+
+Make sure that you read through the <a href='/' className='link'>Okra API overview</a> to understand the specifics of interacting with the Okra API, like request and response formats, pagination, and rate limiting.
 
 :::
+
+1. Select your Okra Sandbox environment.
+
+2. In the Okra API Reference collection, select Wallets → <a href='/' className='link'>Get list of wallets.</a>
+
+3. Click send and check the response.
+
+If you set everything up correctly, this endpoint operation returns a list of banks that Okra supports.
+
+## Create a test customer
+
+To test how your customer will go through the account connection flow, you need to create a test customer. You can do this in multiple ways:
+
+- You can create a customer on the Dashboard. You have the option to manually fill out customer details and define the login credentials, which are needed to go through the account connection flow. You also have the option to autogenerate a customer.
+
+- You can also create a customer via the API. You can define customer details manually in your request using the Create customer endpoint operation, and you can leverage the Autogenerate endpoint via the API as well.
+
+:::info
+
+When you create customers, the account type you select determines the data set that the API generates. For example, the API only generates BVN and NUBAN values for customers with Personal accounts.
+
+:::
+
+## Embed the Okra app
+
+Let's see how you can link a bank account using the sandbox environment, and with test credentials:
+
+

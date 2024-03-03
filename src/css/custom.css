@@ -30,6 +30,11 @@
   background-color: #1a202c;
 }
 
+.navbar .navbar__logo {
+  width: 80px;
+  height: 20px;
+}
+
 html[data-theme="dark"] .navbar .navbar__logo {
   content: url(/img/logo_white.webp);
 }
@@ -54,15 +59,19 @@ html[data-theme="light"] .box {
   color: black;
 }
 
-.navbar .navbar__logo {
-  width: 80px;
-  height: 20px;
+html[data-theme="dark"] .details {
+  background-color: #1a202c;
+  color: white;
 }
 
-/* Override non-category links to be horizonally compact */
+html[data-theme="light"] .details {
+  background-color: white;
+  color: black;
+}
 
 .link {
-  color: #40b0df;
+  color: #6291f6;
+  text-decoration: underline;
 }
 
 .bold {
