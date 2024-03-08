@@ -67,24 +67,24 @@ const config: Config = {
           position: 'left',
           label: 'Getting started',
         },
-        {
-          type: 'doc',
-          docId: 'features/intro',
-          position: 'left',
-          label: 'Features',
-        },
-        {
-          type: 'doc',
-          docId: 'developer-tools/intro',
-          position: 'left',
-          label: 'Developer tools',
-        },
-        {
-          type: 'doc',
-          docId: 'developer-tools/intro',
-          position: 'left',
-          label: 'Community',
-        },
+        // {
+        //   type: 'doc',
+        //   docId: 'features/intro',
+        //   position: 'left',
+        //   label: 'Features',
+        // },
+        // {
+        //   type: 'doc',
+        //   docId: 'developer-tools/intro',
+        //   position: 'left',
+        //   label: 'Developer tools',
+        // },
+        // {
+        //   type: 'doc',
+        //   docId: 'developer-tools/intro',
+        //   position: 'left',
+        //   label: 'Community',
+        // },
       ]
     },
     footer: {
@@ -95,7 +95,7 @@ const config: Config = {
           items: [
             {
               label: "Getting started",
-              to: "/docs/intro",
+              to: "/getting-started/intro",
             },
           ],
         },
@@ -104,7 +104,7 @@ const config: Config = {
           items: [
             {
               label: "Features",
-              href: "/docs/intro",
+              href: "/getting-started/intro",
             },
           ],
         },

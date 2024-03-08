@@ -44,7 +44,7 @@ const GettingStarted = [
     Svg: require("@site/static/img/coins.svg").default,
     description:
       "Attract, engage, and onboard customers effectively with Tensfer.",
-    to: "/getstarted/intro",
+    to: "/getting-started/build-an-app",
   },
 ];
 
@@ -53,14 +53,14 @@ const Features = [
     title: "Payment",
     Svg: require("@site/static/img/payments.svg").default,
     description: "Manage and streamline payments securely and efficiently.",
-    to: "/getstarted/intro",
+    to: "/getting-started/build-an-app",
   },
   {
     title: "Account Data",
     Svg: require("@site/static/img/account_data.svg").default,
     description:
       "Safeguard and leverage your customers' account data for strategic insights.",
-    to: "/getstarted/intro",
+    to: "/getting-started/build-an-app",
   },
 ];
 
@@ -70,21 +70,21 @@ const DeveloperTools = [
     Svg: require("@site/static/img/developer_tools.svg").default,
     description:
       "Gain insight: Explore the comprehensive overview of Tensfer's essential tools.",
-    to: "/getstarted/intro",
+    to: "/getting-started/build-an-app",
   },
   {
     title: "Javascript SDK",
     Svg: require("@site/static/img/js.svg").default,
     description:
       "Harness the capabilities of the JavaScript SDK for enhanced functionality and performance.",
-    to: "/getstarted/intro",
+    to: "/getting-started/build-an-app",
   },
   {
     title: "Tensfer CLI",
     Svg: require("@site/static/img/cli.svg").default,
     description:
       " Utilize the Tensfer CLI for streamlined workflows and efficient management.",
-    to: "/getstarted/intro",
+    to: "/getting-started/build-an-app",
   },
 ];
 
@@ -93,13 +93,13 @@ const Community = [
     title: "Support",
     Svg: require("@site/static/img/support.svg").default,
     description: "Have questions? Contact the sales team",
-    to: "/getstarted/intro",
+    to: "/getting-started/build-an-app",
   },
   {
     title: "Contact sales",
     Svg: require("@site/static/img/contact.svg").default,
     description: "Have questions? Contact the sales team",
-    to: "/getstarted/intro",
+    to: "/getting-started/build-an-app",
   },
 ];
 
