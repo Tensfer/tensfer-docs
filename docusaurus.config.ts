@@ -67,71 +67,77 @@ const config: Config = {
           position: 'left',
           label: 'Getting started',
         },
-        {
-          type: 'doc',
-          docId: 'features/intro',
-          position: 'left',
-          label: 'Features',
-        },
-        {
-          type: 'doc',
-          docId: 'developer-tools/intro',
-          position: 'left',
-          label: 'Developer tools',
-        },
-        {
-          type: 'doc',
-          docId: 'developer-tools/intro',
-          position: 'left',
-          label: 'Community',
-        },
+        // {
+        //   type: 'doc',
+        //   docId: 'features/intro',
+        //   position: 'left',
+        //   label: 'Features',
+        // },
+        // {
+        //   type: 'doc',
+        //   docId: 'developer-tools/intro',
+        //   position: 'left',
+        //   label: 'Developer tools',
+        // },
+        // {
+        //   type: 'doc',
+        //   docId: 'developer-tools/intro',
+        //   position: 'left',
+        //   label: 'Community',
+        // },
       ]
     },
-    // footer: {
-    //   style: "dark",
-    //   links: [
-    //     {
-    //       title: "Docs",
-    //       items: [
-    //         {
-    //           label: "Quickstart",
-    //           to: "/docs/intro",
-    //         },
-    //       ],
-    //     },
-    //     {
-    //       title: "Community",
-    //       items: [
-    //         {
-    //           label: "Stack Overflow",
-    //           href: "https://stackoverflow.com/questions/tagged/docusaurus",
-    //         },
-    //         {
-    //           label: "Discord",
-    //           href: "https://discordapp.com/invite/docusaurus",
-    //         },
-    //         {
-    //           label: "Twitter",
-    //           href: "https://twitter.com/docusaurus",
-    //         },
-    //       ],
-    //     },
-    //     {
-    //       title: "More",
-    //       items: [
-    //         {
-    //           label: "Blog",
-    //           to: "/blog",
-    //         },
-    //         {
-    //           label: "GitHub",
-    //           href: "https://github.com/facebook/docusaurus",
-    //         },
-    //       ],
-    //     },
-    //   ],
-    //   copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
-    // },
+    footer: {
+      style: "light",
+      links: [
+        {
+          title: " ",
+          items: [
+            {
+              label: "Getting started",
+              to: "/docs/intro",
+            },
+          ],
+        },
+        {
+          title: " ",
+          items: [
+            {
+              label: "Features",
+              href: "/docs/intro",
+            },
+          ],
+        },
+        {
+          title: " ",
+          items: [
+            {
+              label: "Bridges & Wallets",
+              href: "https://github.com/Tensfer/tensfer-docs",
+            },
+          ],
+        },
+        {
+          title: " ",
+          items: [
+            {
+              label: "Github discussions",
+              href: "https://github.com/Tensfer/tensfer-docs",
+            },
+          ],
+        },
+        {
+          title: " ",
+          items: [
+            {
+              label: "Ecosystem",
+              href: "https://github.com/Tensfer/tensfer-docs",
+            },
+          ],
+        },
+      ],
+      copyright: 'Made with ❤️ by Tensfer ',
+    },
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,

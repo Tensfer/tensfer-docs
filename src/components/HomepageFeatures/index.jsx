@@ -160,7 +160,7 @@ export default function HomepageFeatures() {
         <Text
           fontWeight="bold"
           fontSize={{ base: "lg", lg: "3xl", "2xl": "4xl" }}
-          color='#40b0df'
+          color="#40b0df"
         >
           Getting started
         </Text>
@@ -184,7 +184,7 @@ export default function HomepageFeatures() {
         <Text
           fontWeight="bold"
           fontSize={{ base: "lg", lg: "3xl", "2xl": "4xl" }}
-          color='#40b0df'
+          color="#40b0df"
         >
           Features
         </Text>
@@ -198,7 +198,7 @@ export default function HomepageFeatures() {
               Svg={item.Svg}
               title={item.title}
               description={item.description}
-              to={item.to}
+              // to={item.to}
             />
           ))}
         </SimpleGrid>
@@ -208,7 +208,7 @@ export default function HomepageFeatures() {
         <Text
           fontWeight="bold"
           fontSize={{ base: "lg", lg: "3xl", "2xl": "4xl" }}
-          color='#40b0df'
+          color="#40b0df"
         >
           Developer tools
         </Text>
@@ -222,17 +222,17 @@ export default function HomepageFeatures() {
               Svg={item.Svg}
               title={item.title}
               description={item.description}
-              to={item.to}
+              // to={item.to}
             />
           ))}
         </SimpleGrid>
       </Stack>
 
-      <Stack mt={8} p={{ base: 8, lg: 0 }}>
+      <Stack mt={8} mb={20} p={{ base: 8, lg: 0 }}>
         <Text
           fontWeight="bold"
           fontSize={{ base: "lg", lg: "3xl", "2xl": "4xl" }}
-          color='#40b0df'
+          color="#40b0df"
         >
           Community
         </Text>
@@ -246,7 +246,7 @@ export default function HomepageFeatures() {
               Svg={item.Svg}
               title={item.title}
               description={item.description}
-              to={item.to}
+              // to={item.to}
             />
           ))}
         </SimpleGrid>
