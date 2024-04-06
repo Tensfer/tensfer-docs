@@ -1,4 +1,5 @@
-import { Stack, Text, SimpleGrid, Link } from "@chakra-ui/react";
+import { Stack, Text, SimpleGrid } from "@chakra-ui/react";
+import Link from "@docusaurus/Link";
 import styles from "./styles.module.css";
 
 // const Introduction = [
@@ -48,21 +49,31 @@ const GettingStarted = [
   },
 ];
 
-const Features = [
+const APIKeys = [
   {
-    title: "Payment",
-    Svg: require("@site/static/img/payments.svg").default,
-    description: "Manage and streamline payments securely and efficiently.",
-    to: "/getting-started/build-an-app",
-  },
-  {
-    title: "Account Data",
+    title: "How to fetch API keys",
     Svg: require("@site/static/img/account_data.svg").default,
     description:
-      "Safeguard and leverage your customers' account data for strategic insights.",
-    to: "/getting-started/build-an-app",
+      "Learn how to create API keys from the most used wallets including Binance, Kucoin, and so on...",
+      to: "api-keys/intro",
   },
 ];
+
+// const Features = [
+//   {
+//     title: "Payment",
+//     Svg: require("@site/static/img/payments.svg").default,
+//     description: "Manage and streamline payments securely and efficiently.",
+//     to: "/getting-started/build-an-app",
+//   },
+//   {
+//     title: "Account Data",
+//     Svg: require("@site/static/img/account_data.svg").default,
+//     description:
+//       "Safeguard and leverage your customers' account data for strategic insights.",
+//     to: "/getting-started/build-an-app",
+//   },
+// ];
 
 const DeveloperTools = [
   {
@@ -186,19 +197,19 @@ export default function HomepageFeatures() {
           fontSize={{ base: "lg", lg: "3xl", "2xl": "4xl" }}
           color="#40b0df"
         >
-          Features
+          API Keys
         </Text>
         <SimpleGrid
           columns={{ base: 1, md: 2, lg: 3 }}
           spacing={{ base: 6, lg: 0 }}
         >
-          {Features.map((item) => (
+          {APIKeys.map((item) => (
             <Feature
               key={item.title}
               Svg={item.Svg}
               title={item.title}
               description={item.description}
-              // to={item.to}
+              to={item.to}
             />
           ))}
         </SimpleGrid>

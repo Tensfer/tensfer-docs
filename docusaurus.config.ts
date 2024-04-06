@@ -55,6 +55,11 @@ const config: Config = {
   ],
 
   themeConfig: {
+    // docs: {
+    //   sidebar: {
+    //     hideable: true,
+    //   },
+    // },
     navbar: {
       logo: {
         alt: "Tensfer logo",
@@ -62,17 +67,17 @@ const config: Config = {
       },
       items: [
         {
-          type: 'doc',
-          docId: 'getting-started/intro',
-          position: 'left',
-          label: 'Getting started',
+          type: "doc",
+          docId: "getting-started/intro",
+          position: "left",
+          label: "Getting started",
         },
-        // {
-        //   type: 'doc',
-        //   docId: 'features/intro',
-        //   position: 'left',
-        //   label: 'Features',
-        // },
+        {
+          type: "doc",
+          docId: "api-keys/intro",
+          position: "left",
+          label: "API Keys",
+        },
         // {
         //   type: 'doc',
         //   docId: 'developer-tools/intro',
@@ -85,58 +90,10 @@ const config: Config = {
         //   position: 'left',
         //   label: 'Community',
         // },
-      ]
+      ],
     },
     footer: {
       style: "light",
-      links: [
-        {
-          title: " ",
-          items: [
-            {
-              label: "Getting started",
-              to: "/getting-started/intro",
-            },
-          ],
-        },
-        {
-          title: " ",
-          items: [
-            {
-              label: "Features",
-              href: "/getting-started/intro",
-            },
-          ],
-        },
-        {
-          title: " ",
-          items: [
-            {
-              label: "Bridges & Wallets",
-              href: "https://github.com/Tensfer/tensfer-docs",
-            },
-          ],
-        },
-        {
-          title: " ",
-          items: [
-            {
-              label: "Github discussions",
-              href: "https://github.com/Tensfer/tensfer-docs",
-            },
-          ],
-        },
-        {
-          title: " ",
-          items: [
-            {
-              label: "Ecosystem",
-              href: "https://github.com/Tensfer/tensfer-docs",
-            },
-          ],
-        },
-      ],
-      copyright: 'Made with ❤️ by Tensfer ',
     },
     prism: {
       theme: prismThemes.github,

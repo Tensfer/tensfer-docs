@@ -1,10 +1,5 @@
-/**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
- */
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&display=swap");
 
-/* You can override the default Infima variables here. */
 :root {
   --ifm-color-primary: #002c8b;
   --ifm-color-primary-dark: #01246e;
@@ -14,6 +9,7 @@
   --ifm-color-primary-lighter: #0741be;
   --ifm-color-primary-lightest: #0c52e8;
   --ifm-code-font-size: 95%;
+  --ifm-font-family-base: "DM Sans";
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
 
@@ -28,6 +24,26 @@
   --ifm-color-primary-lightest: #ffffff;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
   background-color: #1a202c;
+}
+p {
+  font-family: DM Sans;
+}
+
+h1 {
+  font-size: 2rem !important;
+}
+
+h2 {
+  font-size: 1.5rem !important;
+}
+
+h3 {
+  font-size: 1.2rem !important;
+}
+
+.navbar {
+  font-family: DM Sans;
+  font-weight: bolder;
 }
 
 .navbar .navbar__logo {
@@ -72,9 +88,22 @@ html[data-theme="light"] .details {
 .link {
   color: #6291f6;
   text-decoration: underline;
+  font-family: DM Sans;
 }
+
+.list {
+  font-family: DM Sans;
+}
+
+.pagination {
+  font-size: 1rem;
+}
+
+.footer {
+  font-family: DM Sans;
+}
+
 
 .bold {
   font-weight: bold;
 }
-

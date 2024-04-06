@@ -1,18 +1,34 @@
 import React from "react";
 import { useThemeConfig } from "@docusaurus/theme-common";
-import FooterLinks from "@theme/Footer/Links";
-import FooterLogo from "@theme/Footer/Logo";
-import FooterCopyright from "@theme/Footer/Copyright";
-import FooterLayout from "@theme/Footer/Layout";
+import { Box, Flex, Stack, Text } from "@chakra-ui/react";
+import Link from "@docusaurus/Link";
+
+const footerLinks = [
+  {
+    title: "Getting started",
+    to: "/getting-started/intro",
+  },
+  {
+    title: "API keys",
+    to: "/api-keys/intro",
+  },
+  {
+    title: "Github discussions",
+    to: "/",
+  },
+  {
+    title: "Blog",
+    to: "https://tensfer.co/blog",
+  },
+];
 
 function Footer() {
   const { footer } = useThemeConfig();
   if (!footer) {
     return null;
   }
-  const { copyright, links, logo, style } = footer;
   return (
-    <div className="footer">
+    <Stack className="footer" spacing={6} p={4}>
       <div style={{ display: "flex", justifyContent: "center" }}>
         <a href="https://twitter.com/tensfer_hq">
           <img
@@ -35,13 +51,22 @@ function Footer() {
         </a>
       </div>
 
-      <FooterLayout
-        style={style}
-        links={links && links.length > 0 && <FooterLinks links={links} />}
-        logo={logo && <FooterLogo logo={logo} />}
-        copyright={copyright && <FooterCopyright copyright={copyright} />}
-      />
-    </div>
+      <Flex
+        flexDir={{ base: "column", lg: "row" }}
+        gap={8}
+        justifyContent="space-evenly"
+      >
+        {footerLinks.map((item) => (
+          <Text as={Link} to={item.to} fontWeight="semibold">
+            {item.title}
+          </Text>
+        ))}
+      </Flex>
+
+      <Text align="center" fontWeight="semibold">
+        Made with ❤️ by Tensfer
+      </Text>
+    </Stack>
   );
 }
 export default React.memo(Footer);
