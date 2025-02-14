@@ -3,103 +3,102 @@ import type { Config } from "@docusaurus/types";
 import type * as Preset from "@docusaurus/preset-classic";
 
 const config: Config = {
-  title: "Tensfer",
-  tagline: "The safer way for your users to pay with crypto",
-  favicon: "img/icon.webp",
+    title: "Tensfer",
+    tagline: "The safer way for your users to pay with crypto",
+    favicon: "img/icon.webp",
 
-  // Set the production url of your site here
-  url: "https://docs.tensfer.co",
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: "/",
+    // Set the production url of your site here
+    url: "https://docs.tensfer.co",
+    // Set the /<baseUrl>/ pathname under which your site is served
+    // For GitHub pages deployment, it is often '/<projectName>/'
+    baseUrl: "/",
 
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: "tensfer", // Usually your GitHub org/user name.
-  projectName: "tensfer-website", // Usually your repo name.
+    // GitHub pages deployment config.
+    // If you aren't using GitHub pages, you don't need these.
+    organizationName: "tensfer", // Usually your GitHub org/user name.
+    projectName: "tensfer-website", // Usually your repo name.
 
-  onBrokenLinks: "throw",
-  onBrokenMarkdownLinks: "warn",
+    onBrokenLinks: "throw",
+    onBrokenMarkdownLinks: "warn",
 
-  // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
-  i18n: {
-    defaultLocale: "en",
-    locales: ["en", "fr"],
-  },
+    // Even if you don't use internationalization, you can use this field to set
+    // useful metadata like html lang. For example, if your site is Chinese, you
+    // may want to replace "en" with "zh-Hans".
+    i18n: {
+        defaultLocale: "en",
+        locales: ["en", "fr"],
+    },
 
-  presets: [
-    [
-      "classic",
-      {
-        docs: {
-          routeBasePath: "/",
-          sidebarPath: "./sidebars.ts",
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl: "https://github.com/Tensfer/tensfer-docs/",
-        },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            "https://medium.com/@tensferHQ/tensfer-connecting-crypto-b2023fc15eff",
-        },
-        theme: {
-          customCss: "./src/css/custom.css",
-        },
-      } satisfies Preset.Options,
+    presets: [
+        [
+            "classic",
+            {
+                docs: {
+                    routeBasePath: "/",
+                    sidebarPath: "./sidebars.ts",
+                    // Please change this to your repo.
+                    // Remove this to remove the "edit this page" links.
+                    editUrl: "https://github.com/Tensfer/tensfer-docs/",
+                },
+                blog: {
+                    showReadingTime: true,
+                    // Please change this to your repo.
+                    // Remove this to remove the "edit this page" links.
+                    editUrl: "https://medium.com/@tensferHQ/tensfer-connecting-crypto-b2023fc15eff",
+                },
+                theme: {
+                    customCss: "./src/css/custom.css",
+                },
+            } satisfies Preset.Options,
+        ],
     ],
-  ],
 
-  themeConfig: {
-    // docs: {
-    //   sidebar: {
-    //     hideable: true,
-    //   },
-    // },
-    navbar: {
-      logo: {
-        alt: "Tensfer logo",
-        src: "img/logo_colored.webp",
-      },
-      items: [
-        {
-          type: "doc",
-          docId: "getting-started/intro",
-          position: "left",
-          label: "Getting started",
-        },
-        {
-          type: "doc",
-          docId: "api-keys/intro",
-          position: "left",
-          label: "API Keys",
-        },
-        // {
-        //   type: 'doc',
-        //   docId: 'developer-tools/intro',
-        //   position: 'left',
-        //   label: 'Developer tools',
+    themeConfig: {
+        // docs: {
+        //   sidebar: {
+        //     hideable: true,
+        //   },
         // },
-        // {
-        //   type: 'doc',
-        //   docId: 'developer-tools/intro',
-        //   position: 'left',
-        //   label: 'Community',
-        // },
-      ],
-    },
-    footer: {
-      style: "light",
-    },
-    prism: {
-      theme: prismThemes.github,
-      darkTheme: prismThemes.dracula,
-    },
-  } satisfies Preset.ThemeConfig,
+        navbar: {
+            logo: {
+                alt: "Tensfer logo",
+                src: "img/logo_colored.webp",
+            },
+            items: [
+                // {
+                //     type: "doc",
+                //     docId: "getting-started/intro",
+                //     position: "left",
+                //     label: "Getting starteded",
+                // },
+                {
+                    type: "doc",
+                    docId: "api-keys/intro",
+                    position: "left",
+                    label: "API Keys",
+                },
+                // {
+                //   type: 'doc',
+                //   docId: 'developer-tools/intro',
+                //   position: 'left',
+                //   label: 'Developer tools',
+                // },
+                // {
+                //   type: 'doc',
+                //   docId: 'developer-tools/intro',
+                //   position: 'left',
+                //   label: 'Community',
+                // },
+            ],
+        },
+        footer: {
+            style: "light",
+        },
+        prism: {
+            theme: prismThemes.github,
+            darkTheme: prismThemes.dracula,
+        },
+    } satisfies Preset.ThemeConfig,
 };
 
 export default config;
