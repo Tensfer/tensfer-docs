@@ -191,7 +191,7 @@ export default function HomepageFeatures() {
                     fontWeight="bold"
                     fontSize={{ base: "lg", lg: "3xl", "2xl": "4xl" }}
                     color="#40b0df">
-                    Other
+                    Other toolings
                 </Text>
                 <SimpleGrid columns={{ base: 1, md: 2, lg: 3 }} spacing={{ base: 6, lg: 0 }}>
                     {DeveloperTools.map((item) => (
