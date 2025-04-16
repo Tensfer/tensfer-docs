@@ -27,35 +27,35 @@ import styles from "./styles.module.css";
 
 const GettingStarted = [
     {
-        title: "Signup",
+        title: "Tensfer intro",
         Svg: require("@site/static/img/starting_point.svg").default,
         description:
-            "Build your own app with the Tensfer dashboard, then get your API keys and start making payments.",
-        to: "https://dash.tensfer.co/auth/signup",
+            "What makes Tensfer unique and why should you care",
+        to: "#",
     },
     {
-        title: "Build an app",
+        title: "Features",
         Svg: require("@site/static/img/concepts.svg").default,
-        description: "Navigate through building an app effortlessly for optimal experience.",
+        description: "Learn the exiciting features about Tensfer",
         to: "/getting-started/build-an-app",
     },
     {
-        title: "Get customers",
+        title: "Use cases",
         Svg: require("@site/static/img/coins.svg").default,
-        description: "Attract, engage, and onboard customers effectively with Tensfer.",
+        description: "Learn ways Tensfer can best suit your products",
         to: "/getting-started/build-an-app",
     },
 ];
 
-const APIKeys = [
-    {
-        title: "How to fetch API keys",
-        Svg: require("@site/static/img/account_data.svg").default,
-        description:
-            "Learn how to create API keys from the most used wallets including Binance, Kucoin, and so on...",
-        to: "api-keys/intro",
-    },
-];
+// const APIKeys = [
+//     {
+//         title: "How to fetch API keys",
+//         Svg: require("@site/static/img/account_data.svg").default,
+//         description:
+//             "Learn how to create API keys from the most used wallets including Binance, Kucoin, and so on...",
+//         to: "api-keys/intro",
+//     },
+// ];
 
 // const Features = [
 //   {
@@ -78,38 +78,38 @@ const DeveloperTools = [
         title: "Tools overview",
         Svg: require("@site/static/img/developer_tools.svg").default,
         description:
-            "Gain insight: Explore the comprehensive overview of Tensfer's essential tools.",
+            "View the extensive suit of Tensfer tools to help your product go live in minutes and not weeks.",
         to: "/getting-started/build-an-app",
     },
     {
         title: "Javascript SDK",
         Svg: require("@site/static/img/js.svg").default,
         description:
-            "Harness the capabilities of the JavaScript SDK for enhanced functionality and performance.",
+            "Use the Tensfer Javascript SDK to on your product today.",
         to: "/getting-started/build-an-app",
     },
     {
         title: "Tensfer CLI",
         Svg: require("@site/static/img/cli.svg").default,
-        description: " Utilize the Tensfer CLI for streamlined workflows and efficient management.",
+        description: "Test and try out incredible actions using the Tensfer CLI on sandbox",
         to: "/getting-started/build-an-app",
     },
 ];
 
-const Community = [
-    {
-        title: "Support",
-        Svg: require("@site/static/img/support.svg").default,
-        description: "Have questions? Contact the sales team",
-        to: "/getting-started/build-an-app",
-    },
-    {
-        title: "Contact sales",
-        Svg: require("@site/static/img/contact.svg").default,
-        description: "Have questions? Contact the sales team",
-        to: "/getting-started/build-an-app",
-    },
-];
+// const Community = [
+//     {
+//         title: "Support",
+//         Svg: require("@site/static/img/support.svg").default,
+//         description: "Have questions? Contact the sales team",
+//         to: "/getting-started/build-an-app",
+//     },
+//     {
+//         title: "Contact sales",
+//         Svg: require("@site/static/img/contact.svg").default,
+//         description: "Have questions? Contact the sales team",
+//         to: "/getting-started/build-an-app",
+//     },
+// ];
 
 const Feature = ({ Svg, title, description, to }) => {
     return (
@@ -142,8 +142,7 @@ export default function HomepageFeatures() {
         <Stack p={{ base: 4, lg: 0 }} maxW="1024px" mx="auto" spacing={12}>
             <Stack mt={8} p={{ base: 8, lg: 0 }}>
                 <Text fontSize={{ base: "sm", lg: "lg" }}>
-                    This documentation offers guides and resources to help you get up and running
-                    with Tensfer.
+                Explore comprehensive guides, developer tools, and resources to innovate on Tensfer.
                 </Text>
             </Stack>
 
@@ -152,7 +151,7 @@ export default function HomepageFeatures() {
                     fontWeight="bold"
                     fontSize={{ base: "lg", lg: "3xl", "2xl": "4xl" }}
                     color="#40b0df">
-                    Getting started
+                    Explore Tensfer
                 </Text>
                 <SimpleGrid columns={{ base: 1, md: 2, lg: 3 }} spacing={{ base: 6, lg: 0 }}>
                     {GettingStarted.map((item) => (
@@ -167,7 +166,7 @@ export default function HomepageFeatures() {
                 </SimpleGrid>
             </Stack>
 
-            <Stack mt={8} p={{ base: 8, lg: 0 }}>
+            {/* <Stack mt={8} p={{ base: 8, lg: 0 }}>
                 <Text
                     fontWeight="bold"
                     fontSize={{ base: "lg", lg: "3xl", "2xl": "4xl" }}
@@ -185,9 +184,9 @@ export default function HomepageFeatures() {
                         />
                     ))}
                 </SimpleGrid>
-            </Stack>
+            </Stack> */}
 
-            <Stack mt={8} p={{ base: 8, lg: 0 }}>
+            <Stack mt={8} mb={20} p={{ base: 8, lg: 0 }}>
                 <Text
                     fontWeight="bold"
                     fontSize={{ base: "lg", lg: "3xl", "2xl": "4xl" }}
@@ -207,7 +206,7 @@ export default function HomepageFeatures() {
                 </SimpleGrid>
             </Stack>
 
-            <Stack mt={8} mb={20} p={{ base: 8, lg: 0 }}>
+            {/* <Stack mt={8} mb={20} p={{ base: 8, lg: 0 }}>
                 <Text
                     fontWeight="bold"
                     fontSize={{ base: "lg", lg: "3xl", "2xl": "4xl" }}
@@ -225,7 +224,7 @@ export default function HomepageFeatures() {
                         />
                     ))}
                 </SimpleGrid>
-            </Stack>
+            </Stack> */}
         </Stack>
     );
 }

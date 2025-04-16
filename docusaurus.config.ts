@@ -7,6 +7,11 @@ const config: Config = {
     tagline: "The safer way for your users to pay with crypto",
     favicon: "img/icon.webp",
 
+    themes: ['@docusaurus/theme-mermaid'],
+    markdown: {
+      mermaid: true,
+    },
+
     // Set the production url of your site here
     url: "https://docs.tensfer.co",
     // Set the /<baseUrl>/ pathname under which your site is served
@@ -65,30 +70,30 @@ const config: Config = {
                 src: "img/logo_colored.webp",
             },
             items: [
-                // {
-                //     type: "doc",
-                //     docId: "getting-started/intro",
-                //     position: "left",
-                //     label: "Getting starteded",
-                // },
                 {
                     type: "doc",
-                    docId: "api-keys/intro",
+                    docId: "getting-started/overview",
                     position: "left",
-                    label: "API Keys",
+                    label: "Introduction",
                 },
-                // {
-                //   type: 'doc',
-                //   docId: 'developer-tools/intro',
-                //   position: 'left',
-                //   label: 'Developer tools',
-                // },
-                // {
-                //   type: 'doc',
-                //   docId: 'developer-tools/intro',
-                //   position: 'left',
-                //   label: 'Community',
-                // },
+                {
+                    type: "doc",
+                    docId: "getting-started/products",
+                    position: "left",
+                    label: "Products",
+                },
+                {
+                    type: 'doc',
+                    docId: 'getting-started/use-cases',
+                    position: 'left',
+                    label: 'Use cases',
+                },
+                {
+                    type: 'doc',
+                    docId: 'developer-tools/intro',
+                    position: 'left',
+                    label: 'Go live',
+                },
             ],
         },
         footer: {

@@ -1,10 +1,16 @@
 ---
-sidebar_position: 6
+sidebar_position: 1
 ---
 
 # Test your app!
 
 Test the app you create to check out Tensfer's features, and to demo the whole user journey.
+
+## Request access to API Keys
+
+Contact <a href='#' className='link' target='blank'>support</a> to request for test and live credentials:
+
+![sign up page](../../../static/img/signup.png)
 
 ## Get test credentials
 
@@ -19,10 +25,6 @@ Click on an App in the Dashboard to retrieve your sandbox credentials.
 ## Set up the environment
 
 During your integration phase, set up the sandbox environment in these interfaces: the API, your Tensfer apps, and the dashboard.
-
-### In the API
-
-Set your base URL to `https://dashapi.tensfer.co`. Check out Tensfer's <a href='/' className='link'>API environments</a> for more details.
 
 ### In the embed options
 
