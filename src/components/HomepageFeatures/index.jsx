@@ -31,19 +31,19 @@ const GettingStarted = [
         Svg: require("@site/static/img/starting_point.svg").default,
         description:
             "What makes Tensfer unique and why should you care",
-        to: "#",
+        to: "/getting-started/overview",
     },
     {
-        title: "Features",
+        title: "Product",
         Svg: require("@site/static/img/concepts.svg").default,
-        description: "Learn the exiciting features about Tensfer",
-        to: "/getting-started/build-an-app",
+        description: "Learn the exiciting preoducts about Tensfer",
+        to: "/getting-started/products",
     },
     {
         title: "Use cases",
         Svg: require("@site/static/img/coins.svg").default,
         description: "Learn ways Tensfer can best suit your products",
-        to: "/getting-started/build-an-app",
+        to: "getting-started/use-cases",
     },
 ];
 
@@ -75,25 +75,25 @@ const GettingStarted = [
 
 const DeveloperTools = [
     {
-        title: "Tools overview",
+        title: "Security",
         Svg: require("@site/static/img/developer_tools.svg").default,
         description:
-            "View the extensive suit of Tensfer tools to help your product go live in minutes and not weeks.",
-        to: "/getting-started/build-an-app",
+            "Learn about tensfer security architecture",
+        to: "/getting-started/security",
     },
     {
         title: "Javascript SDK",
         Svg: require("@site/static/img/js.svg").default,
         description:
             "Use the Tensfer Javascript SDK to on your product today.",
-        to: "/getting-started/build-an-app",
+        to: "/getting-started/go-live/embed-your-app",
     },
-    {
-        title: "Tensfer CLI",
-        Svg: require("@site/static/img/cli.svg").default,
-        description: "Test and try out incredible actions using the Tensfer CLI on sandbox",
-        to: "/getting-started/build-an-app",
-    },
+    // {
+    //     title: "Tensfer CLI",
+    //     Svg: require("@site/static/img/cli.svg").default,
+    //     description: "Test and try out incredible actions using the Tensfer CLI on sandbox",
+    //     to: "/getting-started/build-an-app",
+    // },
 ];
 
 // const Community = [
@@ -191,7 +191,7 @@ export default function HomepageFeatures() {
                     fontWeight="bold"
                     fontSize={{ base: "lg", lg: "3xl", "2xl": "4xl" }}
                     color="#40b0df">
-                    Developer tools
+                    Other
                 </Text>
                 <SimpleGrid columns={{ base: 1, md: 2, lg: 3 }} spacing={{ base: 6, lg: 0 }}>
                     {DeveloperTools.map((item) => (
