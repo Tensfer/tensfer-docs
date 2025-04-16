@@ -101,7 +101,7 @@ Your app achieve higher rates of successful transactions, improve customer satis
 
 ---
 
-## crypto payroll
+## Crypto payroll
 
 **Problem addressed:**  
 Businesses paying employees in crypto face challenges with transferring funds across multiple wallets, handling currency volatility, and ensuring compliance.

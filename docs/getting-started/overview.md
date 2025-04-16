@@ -13,7 +13,100 @@ Tensfer is an innovative, AI-driven, interoperable connectivity tool that stream
 
 Tensfer is designed not only for users who want to track, trade, or view their portfolios across multiple exchanges, but also for businesses building innovative web3 products that need to enable their users to move liquidity seamlessly from CEXs directly into their applications. Think of Tensfer as the middleman that connects all centralized exchanges and embeds their functionality into your apps, allowing your users to link their favorite exchange and perform transactions—such as making a deposit from Binance or withdrawing from Bybit—without leaving the app or worrying about copying and pasting lengthy crypto addresses.
 
----
+```mermaid
+
+flowchart TB
+    %% Main user interaction flow
+    User([User]) --> Web3App[Web3 application]
+    Web3App --> Tensfer((Tensfer platform))
+    Tensfer --> CEXs[Centralized exchanges]
+    
+    %% Detailed breakdown of components
+    subgraph "Web3 applications"
+        Web3App
+        style Web3App fill:#bbf,stroke:#333,stroke-width:1px
+        
+        DeFi[DeFi platform]
+        Ramps[On/Off Ramp]
+        GameFi[GameFi application]
+        Wallet[Wallet dashboard]
+        
+        Web3App --- DeFi
+        Web3App --- Ramps
+        Web3App --- GameFi
+        Web3App --- Wallet
+    end
+    
+    subgraph "Tensfer Infrastructure"
+        Tensfer
+        style Tensfer fill:#bfb,stroke:#333,stroke-width:2px
+        
+        API[API layer]
+        AI[AI processing]
+        Security[Security modules]
+        Connectors[Exchange connectors]
+        
+        Tensfer --- API
+        API --> AI
+        AI --> Security
+        Security --> Connectors
+    end
+    
+    subgraph "Centralized exchanges"
+        CEXs
+        style CEXs fill:#fbb,stroke:#333,stroke-width:1px
+        
+        Binance[Binance]
+        Bybit[Bybit]
+        Coinbase[Coinbase]
+        Others[Other exchanges]
+        
+        CEXs --- Binance
+        CEXs --- Bybit
+        CEXs --- Coinbase
+        CEXs --- Others
+    end
+    
+    %% User journey and operations
+    subgraph "User Journey"
+        direction TB
+        step1[1. Open web3 app]
+        step2[2. Authorize exchange access]
+        step3[3. Initiate transaction]
+        step4[4. Confirm transaction]
+        
+        step1 --> step2 --> step3 --> step4
+    end
+    
+    subgraph "Core operations"
+        direction TB
+        Balance[Track balances]
+        Transfer[Internal transfers]
+        Deposit[Deposits]
+        Withdraw[Withdrawals]
+        Portfolio[Portfolio view]
+    end
+    
+    %% Connect operations to infrastructure
+    Tensfer --> Core_Ops
+    Core_Ops --> Balance
+    Core_Ops --> Transfer
+    Core_Ops --> Deposit
+    Core_Ops --> Withdraw
+    Core_Ops --> Portfolio
+    
+    %% Invisible node for layout
+    Core_Ops[" "]
+    style Core_Ops fill:none,stroke:none
+
+    %% Color classes
+    classDef user fill:#f9f,stroke:#333,stroke-width:2px
+    classDef operations fill:#ffb,stroke:#333,stroke-width:1px
+    
+    class User user
+    class Balance,Transfer,Deposit,Withdraw,Portfolio operations
+
+```
 
 ## The problem
 

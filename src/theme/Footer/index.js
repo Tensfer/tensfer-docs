@@ -27,46 +27,70 @@ function Footer() {
   if (!footer) {
     return null;
   }
+  
   return (
-    <Stack className="footer" spacing={6} p={4}>
-      <div style={{ display: "flex", justifyContent: "center" }}>
-        <a href="https://twitter.com/tensfer_hq">
-          <img
-            src={require("@site/static/img/x.png").default}
-            alt="x logo"
-            width={20}
-            height={20}
-          />
-        </a>
-        <a
-          href="https://github.com/Tensfer/tensfer-docs"
-          style={{ marginLeft: "10px" }}
-        >
-          <img
-            src={require("@site/static/img/github.png").default}
-            alt="github logo"
-            width={20}
-            height={20}
-          />
-        </a>
-      </div>
-
-      <Flex
-        flexDir={{ base: "column", lg: "row" }}
-        gap={8}
-        justifyContent="space-evenly"
+    <Stack className="footer" spacing={6} py={6} px={4} borderTop="1px solid #eaeaea">
+      <Flex 
+        justifyContent="space-between" 
+        alignItems="center" 
+        maxWidth="1200px" 
+        mx="auto" 
+        width="100%"
+        flexDir={{ base: "column", md: "row" }}
+        gap={{ base: 6, md: 0 }}
       >
-        {footerLinks.map((item) => (
-          <Text as={Link} to={item.to} fontWeight="semibold">
-            {item.title}
-          </Text>
-        ))}
+        <Flex gap={6} justifyContent="center">
+          {footerLinks.map((item, index) => (
+            <Text 
+              key={index}
+              as={Link} 
+              to={item.to} 
+              fontWeight="semibold"
+              fontSize="md"
+              _hover={{ textDecoration: "none", color: "#0066cc" }}
+            >
+              {item.title}
+            </Text>
+          ))}
+        </Flex>
+        
+        <Flex gap={4} justifyContent="center" alignItems="center">
+          <a href="https://twitter.com/tensfer_hq" aria-label="Twitter">
+            <Box 
+              as="img"
+              src={require("@site/static/img/x.png").default}
+              alt="x logo"
+              width={5}
+              height={5}
+              _hover={{ opacity: 0.8 }}
+              transition="opacity 0.2s"
+            />
+          </a>
+          <a href="https://github.com/Tensfer/tensfer-docs" aria-label="GitHub">
+            <Box 
+              as="img"
+              src={require("@site/static/img/github.png").default}
+              alt="github logo"
+              width={5}
+              height={5}
+              _hover={{ opacity: 0.8 }}
+              transition="opacity 0.2s"
+            />
+          </a>
+        </Flex>
       </Flex>
 
-      <Text align="center" fontWeight="semibold">
+      <Text 
+        align="center" 
+        fontWeight="semibold"
+        fontSize="sm"
+        color="gray.600"
+        mt={2}
+      >
         Made with ❤️ by Tensfer
       </Text>
     </Stack>
   );
 }
+
 export default React.memo(Footer);
