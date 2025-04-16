@@ -78,7 +78,7 @@ const DeveloperTools = [
         title: "Security",
         Svg: require("@site/static/img/developer_tools.svg").default,
         description:
-            "Learn about tensfer security architecture",
+            "Learn about Tensfer's security architecture",
         to: "/getting-started/security",
     },
     {
