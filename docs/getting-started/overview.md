@@ -21,7 +21,7 @@ Tensfer is designed to solve the fragmentation and clunky user experience inhere
 
 ### Fragmented ecosystem
 
-In today’s crypto environment, liquidity is scattered across various centralized exchanges. This fragmentation forces both retail users and businesses to deal with isolated silos of liquidity. Institutional or retail investors who want to monitor their portfolios, execute trades, or engage in arbitrage must manually jump between different platforms. This results in a disjointed experience, where continuity and efficiency are sacrificed for the sake of accessing multiple markets.
+In today’s crypto space, liquidity is scattered across various centralized exchanges. This fragmentation forces both retail users and businesses to deal with isolated silos of liquidity. Institutional or retail investors who want to monitor their portfolios, execute trades, or engage in arbitrage must manually jump between different platforms. This results in a disjointed experience, where continuity and efficiency are sacrificed for the sake of accessing multiple markets.
 
 ### Inefficient user interactions
 
