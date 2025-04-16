@@ -43,7 +43,7 @@ const GettingStarted = [
         title: "Use cases",
         Svg: require("@site/static/img/coins.svg").default,
         description: "Learn ways Tensfer can best suit your products",
-        to: "getting-started/use-cases",
+        to: "/getting-started/use-cases",
     },
 ];
 
@@ -86,7 +86,7 @@ const DeveloperTools = [
         Svg: require("@site/static/img/js.svg").default,
         description:
             "Use the Tensfer Javascript SDK to on your product today.",
-        to: "/getting-started/go-live/embed-your-app",
+        to: "/getting-started/go-live/test-your-app",
     },
     // {
     //     title: "Tensfer CLI",
