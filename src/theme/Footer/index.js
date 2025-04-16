@@ -6,19 +6,19 @@ import Link from "@docusaurus/Link";
 const footerLinks = [
   {
     title: "Getting started",
-    to: "/getting-started/intro",
+    to: "/getting-started/overview",
   },
   {
-    title: "API keys",
-    to: "/api-keys/intro",
+    title: "Products",
+    to: "/getting-started/products",
   },
   {
-    title: "Github discussions",
-    to: "/",
+    title: "Use cases",
+    to: "/getting-started/use-cases",
   },
   {
     title: "Blog",
-    to: "https://tensfer.co/blog",
+    to: "https://medium.com/@tensferHQ/",
   },
 ];
 
