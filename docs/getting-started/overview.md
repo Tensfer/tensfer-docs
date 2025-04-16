@@ -9,9 +9,9 @@ description: "The AI powered crypto interoperable infrastructure for businesses 
 
 **The AI powered crypto interoperable infrastructure for businesses and users**
 
-Tensfer is an innovative AI-driven interopable connectivity tool that streamlines the integration of centralized exchanges(CEX) features including balance tracking, internal transfers, deposits, withdrawals. Supporting over 15 exchanges, it seamlessly handles all your CEX asset management needs either for internal use or for your products.
+Tensfer is an innovative, AI-driven, interoperable connectivity tool that streamlines the integration of centralized exchange (CEX) features, including balance tracking, internal transfers, deposits, and withdrawals. Supporting over 15 exchanges, it seamlessly manages all your CEX asset management needs—whether for internal use or to enhance your products.
 
-Tensfer is not only designed for users that want to track, trade or view their portfolio across multiple exchanges, it's also designed for businesses building innovative web3 products, and want their users to move liquidity seamlessly from their CEXs to their apps without leaving their apps to make transfers. Think of Tensfer as the middleman that connects all centralized exchanges, embeds it into your apps, so that your users can link their favourite exchange, to perform transations like make a deposit from e.g Binance to your app, withdraw from Bybit to your app without leaving your app or worrying about copying and pasting long crypto addresses, back and forth the exchanges. 
+Tensfer is designed not only for users who want to track, trade, or view their portfolios across multiple exchanges, but also for businesses building innovative web3 products that need to enable their users to move liquidity seamlessly from CEXs directly into their applications. Think of Tensfer as the middleman that connects all centralized exchanges and embeds their functionality into your apps, allowing your users to link their favorite exchange and perform transactions—such as making a deposit from Binance or withdrawing from Bybit—without leaving the app or worrying about copying and pasting lengthy crypto addresses.
 
 ---
 
