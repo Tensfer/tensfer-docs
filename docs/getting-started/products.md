@@ -1,7 +1,7 @@
 ---
 sidebar_position: 2
 id: products
-title: Products
+title: 📤 Products
 description: "Explore Tensfer's suite of products designed to solve the fragmented liquidity problem and streamline crypto payments."
 ---
 

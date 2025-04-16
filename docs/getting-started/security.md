@@ -1,7 +1,7 @@
 ---
 sidebar_position: 4
 id: security
-title: Security
+title: 🔐 Security
 description: "Learn about Tensfer's comprehensive security framework, non-custodial key management using TEE architecture, and zero-trust infrastructure."
 ---
 

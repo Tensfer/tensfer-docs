@@ -1,7 +1,7 @@
 ---
 sidebar_position: 3
 id: use-cases
-title: Use cases
+title: 🪤 Use cases
 description: "Explore diverse use cases of Tensfer in the crypto ecosystem—from exchanges and wallets to payment service providers, crypto payroll, and DeFi payouts—addressing fragmentation and inefficiencies."
 ---
 

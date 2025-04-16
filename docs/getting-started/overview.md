@@ -1,7 +1,7 @@
 ---
 sidebar_position: 1
 id: overview
-title: Tensfer - Introduction
+title: 🧭 Introduction
 description: "The AI powered crypto interoperable infrastructure for businesses and users"
 ---
 
@@ -14,8 +14,7 @@ Tensfer is an innovative, AI-driven, interoperable connectivity tool that stream
 Tensfer is designed not only for users who want to track, trade, or view their portfolios across multiple exchanges, but also for businesses building innovative web3 products that need to enable their users to move liquidity seamlessly from CEXs directly into their applications. Think of Tensfer as the middleman that connects all centralized exchanges and embeds their functionality into your apps, allowing your users to link their favorite exchange and perform transactions—such as making a deposit from Binance or withdrawing from Bybit—without leaving the app or worrying about copying and pasting lengthy crypto addresses.
 
 ```mermaid
-
-flowchart TB
+  flowchart TB
     %% Main user interaction flow
     User([User]) --> Web3App[Web3 application]
     Web3App --> Tensfer((Tensfer platform))
@@ -24,7 +23,7 @@ flowchart TB
     %% Detailed breakdown of components
     subgraph "Web3 applications"
         Web3App
-        style Web3App fill:#bbf,stroke:#333,stroke-width:1px
+        style Web3App fill:#4a6bdf,stroke:#666666,stroke-width:1px,color:#ffffff
         
         DeFi[DeFi platform]
         Ramps[On/Off Ramp]
@@ -39,7 +38,7 @@ flowchart TB
     
     subgraph "Tensfer Infrastructure"
         Tensfer
-        style Tensfer fill:#bfb,stroke:#333,stroke-width:2px
+        style Tensfer fill:#4CAF50,stroke:#666666,stroke-width:2px,color:#ffffff
         
         API[API layer]
         AI[AI processing]
@@ -54,7 +53,7 @@ flowchart TB
     
     subgraph "Centralized exchanges"
         CEXs
-        style CEXs fill:#fbb,stroke:#333,stroke-width:1px
+        style CEXs fill:#F44336,stroke:#666666,stroke-width:1px,color:#ffffff
         
         Binance[Binance]
         Bybit[Bybit]
@@ -99,12 +98,15 @@ flowchart TB
     Core_Ops[" "]
     style Core_Ops fill:none,stroke:none
 
-    %% Color classes
-    classDef user fill:#f9f,stroke:#333,stroke-width:2px
-    classDef operations fill:#ffb,stroke:#333,stroke-width:1px
+    %% Color classes with universal compatibility
+    classDef user fill:#9C27B0,stroke:#666666,stroke-width:2px,color:#ffffff
+    classDef operations fill:#FF9800,stroke:#666666,stroke-width:1px,color:#000000
     
     class User user
     class Balance,Transfer,Deposit,Withdraw,Portfolio operations
+    
+    %% Style all other nodes for better visibility
+    classDef default fill:#f9f9f9,stroke:#666666,color:#333333
 
 ```
 
